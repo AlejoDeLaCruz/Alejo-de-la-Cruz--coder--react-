@@ -1,0 +1,43 @@
+$color-primary:#3C7A2F ;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+html , body , #root {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;     //Para que todo se ponga uno abajo del otro
+}
+
+
+#main-header {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem 5rem;
+}
+
+main {
+    flex-grow: 1;               //Esto es para que el main tenga un largo indefinido e independiente del largo del navegador.
+    padding: 1rem;
+}
+
+footer {
+    background-color: $color-primary;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    text-align: center;
+}
+
